@@ -3,6 +3,9 @@ from os import getenv
 from tenablescwrapper.authenticate import authenticate
 from tenablescwrapper.analysis import analysis
 
+with open('./queries/vulndetail_query.json', 'r') as vuln_query_f:
+    vulndetail_query = json.load(vuln_query_f)
+
 sc_username = getenv('SC_USERNAME')
 sc_password = getenv('SC_PASSWORD')
 
@@ -20,4 +23,4 @@ vulndetail_results = analysis(
     json.dumps(vulndetail_query)
 )
 
-headers, cookies, sc_hostname, query
+print(json.dumps(vulndetail_results))
