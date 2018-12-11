@@ -1,0 +1,21 @@
+{
+  "type": "vuln",
+  "name": "vulnipdetail_q",
+  "query": {
+    "type": "vuln",
+    "tool": "vulnipdetail",
+    "sourceType": "cumulative",
+    "filters": [
+      {
+        "id": "severity",
+        "filterName": "baseCVSSScore",
+        "operator": "=",
+        "type": "vuln",
+        "isPredefined": "true",
+        "value": "4.0-10.0"
+      }
+    ],
+    "view": "all"
+  },
+  "sourceType": "cumulative"
+}

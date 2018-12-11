@@ -1,0 +1,23 @@
+{
+  "type": "vuln",
+  "name": "listvuln_q",
+  "query": {
+    "type": "vuln",
+    "tool": "listvuln",
+    "sourceType": "cumulative",
+    "startOffset": "0",
+    "endOffset": "1000",
+    "filters": [
+      {
+        "id": "severity",
+        "filterName": "baseCVSSScore",
+        "operator": "=",
+        "type": "vuln",
+        "isPredefined": "true",
+        "value": "04.0-10.0"
+      }
+    ],
+    "view": "all"
+  },
+  "sourceType": "cumulative"
+}

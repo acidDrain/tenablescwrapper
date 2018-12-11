@@ -1,0 +1,22 @@
+{
+  "query": {
+    "name": "vulndetail_query",
+    "type": "vuln",
+    "tool": "vulndetails",
+    "sourceType": "cumulative",
+    "startOffset": "0",
+    "endOffset": "1000",
+    "filters": [
+      {
+        "id": "baseCVSSScore",
+        "filterName": "baseCVSSScore",
+        "operator": "=",
+        "type": "vuln",
+        "value": "4.0-10.0"
+      }
+    ],
+    "vulnTool": "vulndetails"
+  },
+  "type": "vuln",
+  "sourceType": "cumulative"
+}

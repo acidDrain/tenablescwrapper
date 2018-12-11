@@ -1,0 +1,22 @@
+{
+  "type": "vuln",
+  "name": "vulndetails_patched_q",
+  "query": {
+    "type": "vuln",
+    "tool": "vulndetails",
+    "startOffset": "0",
+    "endOffset": "1000",
+    "filters": [
+      {
+        "id": "baseCVSSScore",
+        "filterName": "baseCVSSScore",
+        "operator": "=",
+        "type": "vuln",
+        "isPredefined": "true",
+        "value": "4.0-10.0"
+      }
+    ],
+    "view": "all"
+  },
+  "sourceType": "patched"
+}

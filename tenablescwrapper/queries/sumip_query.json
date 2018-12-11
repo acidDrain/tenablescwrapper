@@ -1,0 +1,21 @@
+{
+  "type": "vuln",
+  "name": "sumip_q",
+  "query": {
+    "type": "vuln",
+    "tool": "sumip",
+    "sourceType": "cumulative",
+    "filters": [
+      {
+        "id": "severity",
+        "filterName": "severity",
+        "operator": "=",
+        "type": "vuln",
+        "isPredefined": "true",
+        "value": "0,1,2,3,4"
+      }
+    ],
+    "view": "all"
+  },
+  "sourceType": "cumulative"
+}
