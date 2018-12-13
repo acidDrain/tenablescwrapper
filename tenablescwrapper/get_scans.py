@@ -6,11 +6,10 @@ def _get_scan_id_list(scan_array: list) -> list:
     return list(map(lambda scan: scan['id'], scan_array))
 
 
-def sc_get_scans(headers: dict = None, cookies: str = None, sc_base_uri: str = None) -> list:
+def sc_get_scans(headers: dict, cookies: str, sc_base_uri: str) -> list:
     '''
-    Retrieves a list of ids corresponding to existing scan results
-    in Security Center. Queries/requests to /analysis endpoint should
-    prefer the most recent scan results.
+    Retrieves a list of scan results from Tenable Security Center, then returns a list of
+    the scan IDs. The greater the scan ID, the more recent the scan.
     '''
 
     if not headers or not cookies or not sc_base_uri:

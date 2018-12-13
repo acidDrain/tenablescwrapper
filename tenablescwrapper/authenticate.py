@@ -2,7 +2,7 @@ import json
 import requests
 
 
-def authenticate(sc_hostname: str, creds: dict = None) -> dict:
+def authenticate(sc_hostname: str, creds: dict) -> dict:
     '''Authenticate to the Security Center API and return
     the authentication headers and cookies for subsequent requests'''
 

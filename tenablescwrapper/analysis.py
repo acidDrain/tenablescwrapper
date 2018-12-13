@@ -3,8 +3,7 @@ import requests
 
 def analysis(headers: dict, cookies: str, sc_hostname: str,
              query: str) -> dict:
-    '''Function used to submit a request to the Security Center
-    /analysis API endpoint'''
+    '''Function used to query the /analysis API endpoint for Security Center'''
     if not headers or not cookies or not sc_hostname or not query:
         raise TypeError(
             'Missing parameter(s): headers, cookies, sc_hostname, or query provided to analysis')
