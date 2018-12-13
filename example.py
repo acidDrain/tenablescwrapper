@@ -1,7 +1,10 @@
 import json
 from os import getenv
+from urllib3 import disable_warnings, exceptions
 from tenablescwrapper.authenticate import authenticate
 from tenablescwrapper.analysis import analysis
+
+disable_warnings(exceptions.InsecureRequestWarning)
 
 with open('./queries/vulndetail_query.json', 'r') as vuln_query_f:
     vulndetail_query = json.load(vuln_query_f)
